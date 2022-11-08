@@ -19,8 +19,12 @@ class OddlyEvenViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        startGame()
+
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        startGame()
     }
 
     @IBAction func evenNumberBtnTap() {
